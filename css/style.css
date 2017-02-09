@@ -1,14 +1,35 @@
 #board {
     width: 70%;
+    background-color: blue;
 }
 
 .tableau {
     border: 1px solid black;
     height: 100px;
     display: inline-block;
-    width: 13%;
+    width: 14%;
+    border-radius: 50%;
+    background-color: white;
 }
 
 .td {
     border: 1px solid black;
+}
+
+.playerone {
+    border: 1px solid black;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+    width: 14%;
+}
+
+.playertwo {
+    border: 1px solid black;
+    height: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    display: inline-block;
+    width: 14%;
 }
