@@ -1,13 +1,14 @@
-var body = document.getElementById("board")
-var board = [["","","","","","",""],
-             ["","","","","","",""],
-             ["","","","","","",""],
-             ["","","","","","",""],
-             ["","","","","","",""],
-             ["","","","","","",""]
-            ];
-board = document.createElement("table");
-body.appendChild(board);
+var corps = document.getElementById("board");
+var board = document.createElement("table");
+board.className = "tableau";
+corps.appendChild(board);
 
+var boardElements = [["","","","","","",""],
+                     ["","","","","","",""],
+                     ["","","","","","",""],
+                     ["","","","","","",""],
+                     ["","","","","","",""],
+                     ["","","","","","",""]
+                    ];
 var Jaune;
 var Rouge;
