@@ -1,11 +1,14 @@
-
+#board {
+    width: 70%;
+}
 
 .tableau {
     border: 1px solid black;
-    width: 500px;
-    height: 500px;
+    height: 100px;
+    display: inline-block;
+    width: 13%;
 }
 
-.test {
+.td {
     border: 1px solid black;
 }
