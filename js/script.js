@@ -34,7 +34,6 @@ var joueurUn = 1;
            }
            var lig = i-1;
              if (joueurUn == 1) {
-                //document.getElementById("case"+col).className = "playerone";
                 joueurUn = 0;
                 grid[lig][col] = 1;
               }
