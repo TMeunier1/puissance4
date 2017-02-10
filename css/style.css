@@ -1,6 +1,20 @@
+#body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #board {
     width: 70%;
     background-color: blue;
+    order: 2;
+
+}
+
+.button {
+    display: inline-block;
+    width: 10%;
+    height: 3em;
+    order: 1;
 }
 
 .tableau {
