@@ -43,6 +43,7 @@ var joueurUn = 1;
                 joueurUn = 1;
                 grid[lig][col] = 2;
              }
+             actualiserGrille();
          });
     }
 
@@ -52,14 +53,14 @@ function afficherGrille (){
     }
 }
 
-function actualiserGrille (){
-    for(i = 0; i <  grid.length; i++){
-        for(j = 0; i < grid[i].length; i++) {
-            if (grid[i] == 1) {
-                document.getElementById("case"+col+"-"+lig).className = "playerone";
+function actualiserGrille(){
+    for(var lig = 0; lig <  grid.length; lig++){
+        for(col = 0; col < grid[lig].length; col++) {
+            if (grid[lig][col] == 1) {
+                document.getElementById("case"+lig+"-"+col).className = "playerone";
             }
-            else if (grid[i] == 2) {
-                document.getElementById("case"+col+"-"+lig).className = "playertwo";
+            else if (grid[lig][col] == 2) {
+                document.getElementById("case"+lig+"-"+col).className = "playertwo";
             }
         }
     }
